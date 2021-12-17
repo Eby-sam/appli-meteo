@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#4190f8, #6c86e9, #4db84d, #42d444);
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    font-size: 4.5rem;
+    color: white;
+    font-style: italic;
+}
+
+#interface {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    margin:  auto;
+    position: relative;
+    top: 10rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#info {
+    width: 65%;
+    height: 100%;
+    border: 1px solid #ffffff;
+    color: white;
+    font-size: 2rem;
+}
+
+#infoP {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#maNote {
+    width: 100%;
+    height: 40%;
+}
+
+#divImg {
+    width: 35%;
+    height: 100%;
+    border: 1px solid #ffffff;
+}
+
+#ville {
+    width: 50%;
+    height: 10%;
+    text-align: center;
+}
+
+#ici {
+    width: 100%;
+    margin-top: 5rem;
+}

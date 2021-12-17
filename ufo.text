@@ -1,0 +1,26 @@
+// info importantes de l'appli M....
+
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=54a4cae3c77e0a37f7e28d0687911172
+
+xhr.onload = function () {
+    if(xhr.status !== 200) {
+        console.log('ça fonctionne biennnnnnnnn !!!!!!')
+        return;
+    }
+    let reponse = xhr.response;
+    console.log(reponse);
+    let user = reponse.utilisateur;
+    alert("hello " + user.prenom + " " + user.nom);
+}
+
+ // progression du download  de la reponse ( event en param)
+xhr.onprogress = function (event) {
+    if(event.lengthComputable) {
+        let charge = event.loaded;
+        let total = event.total;
+        console.log(charge / 1024 / 1024 + " kilo octets reçus sur " + (total / 1024 / 1024) + " ko");
+    }
+}
+
+// on envoi !!!
+xhr.send();
