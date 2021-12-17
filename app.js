@@ -20,11 +20,11 @@ but.addEventListener('click', function () {
         }
 
         let reponse = xhr.response;
-        temps.innerHTML = Math.ceil(reponse.main.temp) + ' '+ ' °';
-        vent.innerHTML = Math.ceil(reponse.wind.speed) + ' '+ ' km';
+        temps.innerHTML = Math.ceil(reponse.main.temp) + ' '+ ' °C';
+        vent.innerHTML = Math.ceil(reponse.wind.speed) + ' '+ ' km/H';
         humide.innerHTML = Math.ceil(reponse.main.humidity) + ' '+ ' %';
-        tempMin.innerHTML = Math.ceil(reponse.main.temp_min) + ' '+ ' °';
-        tempMax.innerHTML = Math.ceil(reponse.main.temp_max) + ' '+ ' °';
+        tempMin.innerHTML = Math.ceil(reponse.main.temp_min) + ' '+ ' °C';
+        tempMax.innerHTML = Math.ceil(reponse.main.temp_max) + ' '+ ' °C';
     }
 
     xhr.send();
